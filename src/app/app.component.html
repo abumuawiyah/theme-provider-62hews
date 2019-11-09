@@ -1,0 +1,37 @@
+<hello name="{{ name }}"></hello>
+
+<theme-provider>
+  <my-button 
+    [color]="'uiBlue'" 
+    [scale]="9">
+    Button
+  </my-button>
+</theme-provider>
+
+<theme-provider>
+  <my-button 
+    [color]="'uiBlue'" 
+    [scale]="9">
+    Button
+  </my-button>
+</theme-provider>
+
+<br />
+<br />
+
+<theme-provider>
+  <ng-template let-palette="palette" let-scales="scales">
+    <my-button>
+    <div 
+      [style.color]="palette['uiYellow']"
+      [style.background-color]="palette['uiPink']"
+      [style.font-size]="scales['spacing-09']"
+    >
+      Button
+    </div>
+  </my-button>
+  <app-child1>
+    <app-child1dot1></app-child1dot1>
+  </app-child1>
+  </ng-template>
+</theme-provider>
